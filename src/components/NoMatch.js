@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const NoMatch = () => (
   <>
-    <Container style={{marginTop: "100px", marginBottom: "100px"}}>
+    <Container style={{marginTop: "50px", marginBottom: "50px"}}>
       <Image src={BadLink} centered size="large"/>
       <Segment basic textAlign= "center" style={{marginLeft: "20vw", marginRight: "20vw"}}>
       <BadHair>

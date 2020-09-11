@@ -9,15 +9,19 @@ class Navbar extends React.Component {
     return (
      <Menu borderless fluid widths={6} style={{ border: "none"}}>
        <Menu.Item
+         href= "/ourstory"
          name= "About Rake Salon"
        />
        <Menu.Item
+        href= "/ourstylists"
          name= "Meet Our Stylists"
        />
        <Menu.Item
+       href= "/ourservices"
          name= "Menu of Services"
        />
        <Menu.Item
+       href=  "/ourproducts"
          name= "Our Products"
       />
      </Menu>

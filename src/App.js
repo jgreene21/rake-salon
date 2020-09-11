@@ -11,6 +11,10 @@ import FetchAdmin from "./admin/FetchAdmin";
 import LargeHeader from "./components/LargeHeader";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
+import Story from "./components/Story";
+import Stylists from "./components/Stylists";
+import Services from "./components/Services";
+import Products from "./components/Products";
 
 
 const App = () => (
@@ -24,6 +28,10 @@ const App = () => (
         {/* <ProtectedRoute exact path="/adminpanel" component={AdminPanel} /> */}
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/ourstory" component={Story} />
+        <Route exact path="/ourstylists" component={Stylists} />
+        <Route exact path="/ourservices" component={Services} />
+        <Route exact path="/ourproducts" component={Products} />
         <Route component={NoMatch} />
       </Switch>
       <Footer /> 

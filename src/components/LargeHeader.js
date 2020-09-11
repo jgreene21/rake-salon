@@ -14,8 +14,8 @@ class LargeHeader extends React.Component {
       <Grid.Column width={3} style={{marginTop: "20px"}}>
      
       </Grid.Column>
-      <Grid.Column width={6}>
-        <Image src={Logo} />
+      <Grid.Column width={6} >
+        <Image src={Logo} style={{marginLeft: "50px"}}/>
         </Grid.Column>
       <Grid.Column width={4} verticalAlign='bottom' >
         <Image.Group>

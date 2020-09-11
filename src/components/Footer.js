@@ -1,5 +1,6 @@
 import React from "react";
 import { Segment, Image, List, Grid } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import Logo2 from "../images/Logo2.png"
 
@@ -15,10 +16,10 @@ function Footer () {
       </Grid.Column>
       <Grid.Column width={6}>
         <List >
-          <List.Item >Our Story</List.Item>
-          <List.Item>Our Stylists</List.Item>
-          <List.Item>Our Services</List.Item>
-          <List.Item>Our Products</List.Item>
+          <Link to= "/ourstory" style={{color: "#f4f4f4"}}><List.Item >Our Story</List.Item></Link>
+          <Link to= "/ourstylists" style={{color: "#f4f4f4"}}><List.Item>Our Stylists</List.Item></Link>
+          <Link to= "/ourservices" style={{color: "#f4f4f4"}}><List.Item>Our Services</List.Item></Link>
+          <Link to= "/ourproducts" style={{color: "#f4f4f4"}}><List.Item>Our Products</List.Item></Link>
         </List>
       </Grid.Column>
       <Grid.Column width={4}>
