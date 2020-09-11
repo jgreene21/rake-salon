@@ -23,13 +23,15 @@ function Footer () {
       </Grid.Column>
       <Grid.Column width={4}>
         <List >
-        {/* <a href="https://www.google.com/maps/dir/40.730624,-111.8437376/rake+salon+brentwood/@39.4147769,-121.2905381,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x808ffe9506e55d81:0x6162b1d01462b8fb!2m2!1d-121.6943776!2d37.9326443"> */}
+        <a href="https://www.google.com/maps/dir/40.730624,-111.8437376/rake+salon+brentwood/@39.4147769,-121.2905381,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x808ffe9506e55d81:0x6162b1d01462b8fb!2m2!1d-121.6943776!2d37.9326443" style={{color: "#f4f4f4"}}>
           <List.Item >240 Oak St</List.Item>
           <List.Item >Brentwood, Ca</List.Item>
           <List.Item >94513</List.Item>
-          {/* </a> */}
+          </a>
           <br/>
-          <List.Item>(925) 240-7776</List.Item>
+        <a href= "tel: 9253928475" style={{color: "#f4f4f4"}}>
+          <List.Item>(925) 392-8475</List.Item>
+          </a>
         </List>
       </Grid.Column>
   </Grid>
