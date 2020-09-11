@@ -1,8 +1,9 @@
 import React from 'react';
-import { Header, } from 'semantic-ui-react';
+import { Image, } from 'semantic-ui-react';
+import Menu from "../images/Menu.svg";
 
 const Services= () => (
-  <Header as="h3" textAlign="center">Services</Header>
+  <Image src={Menu} centered />
 )
 
 export default Services;

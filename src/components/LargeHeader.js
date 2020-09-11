@@ -1,6 +1,7 @@
 import React from "react";
 import { Image, Grid, Header} from "semantic-ui-react";
-import Logo from "../images/Logo.png"
+import { Link } from "react-router-dom";
+import Logo from "../images/Logo.png";
 import Instagram from "../images/Instagram.svg";
 import Facebook from "../images/Facebook.svg";
 import Contact from "../images/Contact.svg";
@@ -15,7 +16,9 @@ class LargeHeader extends React.Component {
      
       </Grid.Column>
       <Grid.Column width={6} >
-        <Image src={Logo} style={{marginLeft: "50px"}}/>
+        <Link to="/">
+        <Image src={Logo} style={{marginLeft: "10%"}}/>
+        </Link>
         </Grid.Column>
       <Grid.Column width={4} verticalAlign='bottom' >
         <Image.Group>

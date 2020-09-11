@@ -1,8 +1,14 @@
 import React from 'react';
-import { Header, } from 'semantic-ui-react';
+import { Header, Image, Grid, Container } from 'semantic-ui-react';
+import Davines from "../images/Davines.svg";
+import Product from "../images/Products.png";
 
 const Products = () => (
-  <Header as="h3" textAlign="center">Products</Header>
+  <>
+  <Container style={{marginTop: "75px", marginBottom: "75px"}}>
+  <Image src={Davines} centered />
+  </Container>
+  </>
 )
 
 export default Products;
