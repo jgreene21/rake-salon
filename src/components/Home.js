@@ -5,6 +5,7 @@ import Open from "../images/Open.png";
 import ScrollingWrapper from "./ScrollingWrapper";
 
 import Gallery from "./Gallery.js";
+import Reviews from "./Reviews";
 
 const Home = () => (
   <>
@@ -35,11 +36,18 @@ const Home = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-      <div style={{marginTop: "2%", marginBottom: "2%"}}>
-        <Customers>Our Darling Customers</Customers>
-      
-    <Gallery style={{marginBottom: "5%"}}/>
+      <div style={{marginTop: "2%", marginBottom: "5%"}}>
+        <Customers>Client Gallery</Customers>
+    <Gallery />
     </div>
+    <Yelp>what they're saying . . .</Yelp>
+    <iframe 
+    width= "100%"
+    height= "500px"
+    border= "none"
+    boxShadow= "none"
+    src="https://apps.elfsight.com/widget/82d91886-c0da-49d3-98c3-7adf44b24f62">
+    </iframe>
   </>
 );
 
@@ -75,6 +83,21 @@ const Customers = styled.div`
     color: ##2B2828
     @media (max-width: 700px) {
       font-size: 36px;
+    }
+  }
+`;
+
+const Yelp = styled.div`
+   {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 80px;
+    text-align: center;
+    color: ##2B2828
+    @media (max-width: 700px) {
+      font-size: 28px;
     }
   }
 `;

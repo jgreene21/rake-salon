@@ -15,7 +15,9 @@ function Footer () {
   <Segment inverted style={{borderRadius: "0px", backgroundColor: "#2B2828"}}>
   <Grid verticalAlign='middle' columns={3} centered>
       <Grid.Column width={4}>
+          <Link to="/">
           <Image src={Logo2} />
+          </Link>
       </Grid.Column>
       <Grid.Column width={6}>
         <List >

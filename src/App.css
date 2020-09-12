@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.GPjwE {
+  padding: 9px 20px;
+  border-radius: 16px;
+  background-color: #2B2828;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  text-transform: uppercase;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+  -webkit-box-pack: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+}
