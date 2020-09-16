@@ -3,9 +3,9 @@ import { Segment, Image, List, Grid } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import Logo2 from "../images/Logo2.png";
-import Contact2 from "../images/Contact2.svg";
 import Instagram2 from "../images/Instagram2.svg";
 import Facebook2 from "../images/Facebook2.svg"
+import MessageMe from "./MessageMe";
 
 
 function Footer () {
@@ -43,7 +43,7 @@ function Footer () {
         <Image.Group>
           <a href= "https://www.instagram.com/rakesalon/"><Image src={Instagram2} /></a>
           <a href= "https://www.facebook.com/rakesalon"><Image src={Facebook2} style={{marginRight: "3%", marginLeft: "3%"}}/></a>
-          <Image src={Contact2} />
+          <MessageMe />
         </Image.Group>
       </Grid.Column>
   </Grid>

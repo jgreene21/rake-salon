@@ -1,11 +1,10 @@
 import React from "react";
-import { Image, Grid, Header } from "semantic-ui-react";
+import { Image, Grid } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import Logo from "../images/Logo.png";
 import Instagram from "../images/Instagram.svg";
 import Facebook from "../images/Facebook.svg";
-import Contact from "../images/Contact.svg";
-import Appointment from "../images/Appointment.png";
+import MessageMe2 from "./MessageMe2";
 
 class LargeHeader extends React.Component {
   render() {
@@ -13,13 +12,7 @@ class LargeHeader extends React.Component {
       <>
         <Grid centered columns={4}>
           <Grid.Column width={3} verticalAlign="bottom">
-            <a
-              target="_top"
-              style={style.button}
-              href="https://squareup.com/appointments/buyer/widget/tf0dwkuv2h5a71/QPQYCW64FC4N9"
-            >
-              Appointments
-            </a>
+         
           </Grid.Column>
           <Grid.Column width={6}>
             <Link to="/">
@@ -34,7 +27,7 @@ class LargeHeader extends React.Component {
               <a href="https://www.facebook.com/rakesalon">
                 <Image src={Facebook} />
               </a>
-              <Image src={Contact} />
+              <MessageMe2 />
             </Image.Group>
           </Grid.Column>
         </Grid>

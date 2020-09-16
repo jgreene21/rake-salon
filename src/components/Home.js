@@ -1,11 +1,9 @@
 import React from "react";
-import { Header, Segment, Image, Grid, Reveal } from "semantic-ui-react";
+import { Segment, Image, Grid, Reveal } from "semantic-ui-react";
 import styled from "styled-components";
 import Open from "../images/Open.png";
-import ScrollingWrapper from "./ScrollingWrapper";
-
 import Gallery from "./Gallery.js";
-import Reviews from "./Reviews";
+
 
 const Home = () => (
   <>
@@ -15,9 +13,9 @@ const Home = () => (
       inverted
       style={{ background: "#99B5CC", borderRadius: "0px" }}
     >
-      <Grid centered columns={4}>
+      <Grid stackable centered columns={4}>
         <Grid.Row verticalAlign="middle">
-          <Grid.Column width={6}>
+          <Grid.Column width={5}>
             <Message>
               Here we go again! We officially REOPENED our doors (for all your
               indoor services!) on Monday, August 31st. All COVID safety
@@ -31,16 +29,16 @@ const Home = () => (
             </Message>
           </Grid.Column>
           <Grid.Column>
-            <ImageHolder as={Image} src={Open} />
+            <ImageHolder as={Image} src={Open} centered/>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
       <div style={{marginTop: "2%", marginBottom: "5%"}}>
-        <Customers>Client Gallery</Customers>
+        <Heading>Client Gallery</Heading>
     <Gallery />
     </div>
-    <Yelp>what they're saying . . .</Yelp>
+    <Heading>what they're saying . . .</Heading>
     <iframe 
     width= "100%"
     height= "500px"
@@ -57,8 +55,8 @@ const ImageHolder = styled.div`
     margin-left: 75px;
     width: 300px;
     @media (max-width: 1000px) {
-      margin-top: 10px;
-      width: 150px;
+      width: 250px;
+      margin-top: 5px;
     }
   }
 `;
@@ -67,27 +65,12 @@ const Message = styled.div`
    {
     font-size: 16px;
     @media (max-width: 700px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 `;
 
-const Customers = styled.div`
-   {
-    font-family: Playfair Display;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 59px;
-    text-align: center;
-    color: ##2B2828
-    @media (max-width: 700px) {
-      font-size: 36px;
-    }
-  }
-`;
-
-const Yelp = styled.div`
+const Heading = styled.div`
    {
     font-family: Playfair Display;
     font-style: italic;
