@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Image, Reveal } from "semantic-ui-react";
 import One from "../images/1.png";
-import Two from "../images/2.png";
 import Three from "../images/3.png";
 import Four from "../images/4.png";
 import Five from "../images/5.png";
@@ -30,8 +29,7 @@ import Seventeen from "../images/17.png";
 const Gallery = () => (
   <>
   <div style={{width: "75vw", margin: "auto"}}>
-  <Grid style={{margin: "0 auto"}}>
-    <Grid.Row columns={5} style={{margin: "0 auto"}}>
+  <Grid columns={5} style={{margin: "0 auto"}}>
       <Grid.Column>
         <Image src={One} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
@@ -54,9 +52,7 @@ const Gallery = () => (
       <Grid.Column>
         <Image src={Ten} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
-    </Grid.Row>
-
-    <Grid.Row columns={5}>
+  
       <Grid.Column>
         <Image src={Three} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
@@ -79,9 +75,7 @@ const Gallery = () => (
       <Grid.Column>
         <Image src={Six} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
-    </Grid.Row>
-
-    <Grid.Row columns={5}>
+  
       <Grid.Column>
         <Image src={Seven} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
@@ -102,24 +96,9 @@ const Gallery = () => (
         <Image src={TwentyTwo} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
       <Grid.Column>
-        <Reveal animated="move" style={{ cursor: "pointer" }}>
-          <Reveal.Content visible>
-            <Image src={After4} style={{ height: "15vw", width: "20vw" }} />
-          </Reveal.Content>
-          <Reveal.Content hidden>
-            <Image src={Before4} style={{ height: "15vw", width: "20vw" }} />
-          </Reveal.Content>
-        </Reveal>
+        <Image src={Eighteen} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
-      </Grid.Row>
-
-    <Grid.Row columns={5}>
-      <Grid.Column>
-        <Image src={Twenty} style={{ height: "15vw", width: "20vw" }} />
-      </Grid.Column>
-      <Grid.Column>
-      <Image src={TwentyFour} style={{ height: "15vw", width: "20vw" }} />
-      </Grid.Column>
+    
       <Grid.Column>
         <Reveal animated="move" style={{ cursor: "pointer" }}>
           <Reveal.Content visible>
@@ -131,12 +110,24 @@ const Gallery = () => (
         </Reveal>
       </Grid.Column>
       <Grid.Column>
-        <Image src={Eighteen} style={{ height: "15vw", width: "20vw" }} />
+        <Image src={Twenty} style={{ height: "15vw", width: "20vw" }} />
+      </Grid.Column>
+      <Grid.Column>
+      <Image src={TwentyFour} style={{ height: "15vw", width: "20vw" }} />
+      </Grid.Column>
+      <Grid.Column>
+        <Reveal animated="move" style={{ cursor: "pointer" }}>
+          <Reveal.Content visible>
+            <Image src={After4} style={{ height: "15vw", width: "20vw" }} />
+          </Reveal.Content>
+          <Reveal.Content hidden>
+            <Image src={Before4} style={{ height: "15vw", width: "20vw" }} />
+          </Reveal.Content>
+        </Reveal>
       </Grid.Column>
       <Grid.Column>
       <Image src={Nineteen} style={{ height: "15vw", width: "20vw" }} />
       </Grid.Column>
-      </Grid.Row>
   </Grid>
   </div>
   </>

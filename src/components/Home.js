@@ -1,5 +1,5 @@
 import React from "react";
-import { Segment, Image, Grid, Reveal } from "semantic-ui-react";
+import { Segment, Image, Grid, } from "semantic-ui-react";
 import styled from "styled-components";
 import Open from "../images/Open.png";
 import Gallery from "./Gallery.js";
@@ -41,7 +41,7 @@ const Home = () => (
     <Heading>what they're saying . . .</Heading>
     <iframe 
     width= "100%"
-    height= "500px"
+    height= "480px"
     border= "none"
     boxShadow= "none"
     src="https://apps.elfsight.com/widget/82d91886-c0da-49d3-98c3-7adf44b24f62">
@@ -55,8 +55,7 @@ const ImageHolder = styled.div`
     margin-left: 75px;
     width: 300px;
     @media (max-width: 1000px) {
-      width: 250px;
-      margin-top: 5px;
+      width: 200px;
     }
   }
 `;
@@ -65,6 +64,8 @@ const Message = styled.div`
    {
     font-size: 16px;
     @media (max-width: 700px) {
+      margin: 0 auto;
+      width: 85%;
       font-size: 14px;
     }
   }

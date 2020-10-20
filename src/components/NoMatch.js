@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Header, Image, Button, Segment } from "semantic-ui-react";
+import { Container, Image, Button, Segment } from "semantic-ui-react";
 import BadLink from "../images/BadLink.png";
 import styled from "styled-components";
 

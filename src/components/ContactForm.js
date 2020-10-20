@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Header, Button } from "semantic-ui-react";
+import { Form, Button } from "semantic-ui-react";
 
 export default class MyForm extends React.Component {
   constructor(props) {
